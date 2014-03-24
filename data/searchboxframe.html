@@ -1,0 +1,26 @@
+<html>
+  <head ng-app = "connected" >
+    <link href="searchboxframe.css" rel="stylesheet"></link>
+	 <script type="text/javascript" src="angular.js"></script>
+	 <script type="text/javascript" src="searchboxframectrl.js"></script>
+
+  </head>
+
+  <body>
+  	<div class= "searchbox" ng-controller = "searchcontroller">
+  	 <input type="text" 
+  	 		id="searchword"
+  	 		ng-model = "search_params1" >
+	 <select id="category" 
+			  ng-model = "search_params2">
+  	 		<option ng-repeat= "search_params in ['Song', 'Artist']">
+  	 		{{search-params2}}
+  	 		</option>
+		</select>
+    </div>
+    
+  </body>
+</html>
+
+
+ 
